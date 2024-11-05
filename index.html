@@ -72,13 +72,13 @@
     color: rgba(73, 237, 0, 0.7);
   }
 
-  #iframe {#
+  .iframe {
     width: 100%;
     height: 100%; /* Full height of modal content */
     border: none;
     margin-top: 0; /* Remove top margin */
     box-shadow: none; /* Remove shadow */
-  }#
+  }
 
   .spinner {
     border: 4px solid rgba(0, 0, 0, 0.1);
@@ -237,7 +237,7 @@
       }, interval);
     }
 
-    #function showLink(index) {
+    function showLink(index) {
     const iframe = document.getElementById('modalIframe');
     const modal = document.getElementById('myModal');
     const spinner = document.getElementById('spinner');
@@ -245,7 +245,7 @@
     modal.style.display = 'flex';
     spinner.style.display = 'block';
     iframe.onload = () => {
-      spinner.style.display = 'none';#
+      spinner.style.display = 'none';
     };
     clearInterval(autoNavigateInterval);
     autoNavigateInterval = setInterval(() => {
