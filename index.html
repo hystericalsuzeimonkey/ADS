@@ -237,7 +237,7 @@
       }, interval);
     }
 
-    function showLink(index) {
+    #function showLink(index) {
     const iframe = document.getElementById('modalIframe');
     const modal = document.getElementById('myModal');
     const spinner = document.getElementById('spinner');
@@ -245,7 +245,7 @@
     modal.style.display = 'flex';
     spinner.style.display = 'block';
     iframe.onload = () => {
-      spinner.style.display = 'none';
+      spinner.style.display = 'none';#
     };
     clearInterval(autoNavigateInterval);
     autoNavigateInterval = setInterval(() => {
